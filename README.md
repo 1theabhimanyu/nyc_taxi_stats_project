@@ -31,3 +31,11 @@ Every hypothesis was tested at a strict significance threshold of $\alpha = 0.05
    python -m venv venv
    source venv/bin/activate  # macOS/Linux
    venv\Scripts\activate     # Windows
+
+  requirements:
+       pandas>=2.0.0
+       numpy>=1.24.0
+       scipy>=1.10.0
+       statsmodels>=0.14.0
+       matplotlib>=3.7.0
+       seaborn>=0.12.2
