@@ -35,7 +35,7 @@ def load_or_generate_nyc_taxi_data(filepath: str = "nyc_taxi_data.csv", n_sample
     """
     if os.path.exists(filepath):
         print(f"[INFO] Loading dataset from {filepath}...")
-        df = pd.read_csv(filepath)
+        df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv")
     else:
         print(f"[INFO] '{filepath}' not found locally. Generating realistic NYC TLC sample (N={n_samples})...")
         np.random.seed(42)
